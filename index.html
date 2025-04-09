@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trabalhando com Formulários</h1>
+    <form name="frmCadastro">
+        <label>
+            <u>Nome:</u>
+            <input type="text" name="nome" tabindex="1" accesskey="n" required>
+        </label>
+        <br />
+        <label for="dataNascimento">
+            <u>Data de Nascimento:</u>
+            <input type="date" name="dataNascimento" id="dataNascimento" tabindex="2" accesskey="s" min="2000-01-01" max="2025-04-07">
+        </label>
+        <br />
+        <label>
+            <u>Email:</u>
+            <input type="email">
+        </label>
+        <br />
+        <label>
+            <u>CPF:</u>
+            <input type="text" name="cpf" maxlength="14" placeholder="123.456.789-00">
+        </label>
+        <br />
+        <label>
+            <u>Telefone:</u>
+            <input type="tel" name="telefone" id="telefone">
+        </label>
+        <br />
+        <label>
+            <u>Dependentes:</u>
+            <input type="number" name="dependentes" id="dependentes" min="0" max="10">
+        </label>
+        <br />
+        <label>
+            <u>Senha:</u>
+            <input type="password" name="password" id="password">
+        </label>
+        <br />
+        <label>
+            <u>Anexo:</u>
+            <input type="file" name="anexo" id="anexo" accept="image/*">
+        </label>
+        <br />
+        <label>
+            <u>Gênero:</u>
+            <label>
+                <u>Masculino</u>
+                <input type="radio" name="genero" id="Masc" value="M">
+            </label>
+            <label>
+                <u>Feminino</u>
+                <input type="radio" name="genero" id="Fem" value="F">
+            </label>
+            <label>
+                <u>Outro</u>
+                <input type="radio" name="genero" id="Outro" value="O">
+            </label>
+        </label>
+        <br />
+        <input type="submit">
+    </form>
+</body>
+</html>
